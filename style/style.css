@@ -219,7 +219,7 @@ nav .phone_number ion-icon{
 .left h1{
     font-family: 'Caros Soft Extrabold';
     font-weight: 500;
-    font-size: 38px;
+    font-size: 32px;
     color: var(--dark-green);
     z-index: 1;
 }
@@ -481,8 +481,14 @@ nav .phone_number ion-icon{
 }
 
 
+@media (max-height:610px){
+    .left h1{
+        font-size: 24px;
+    }
+}
 
-@media (min-width:798px){
+
+@media (min-width:698px){
 
 .container{
     display: flex;

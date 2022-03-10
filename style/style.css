@@ -606,3 +606,27 @@ nav .phone_number ion-icon{
     color: #296F6D;
 }
 }
+
+.overlay{
+    position:absolute;
+    z-index: 10;
+    
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--orange);
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'BetterGrade';
+    line-height: 0.7;
+    font-size: 60px;
+    font-weight: 400;
+    color:var(--blue-green);
+    text-align: right;
+}
+
+.overlay h1{
+    font-weight: 400;
+}

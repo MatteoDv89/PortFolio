@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio M.BERLANAS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
      <link rel="stylesheet" href="style/style.css">
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+   
      <script src="javascript/app.js" defer></script>
 </head>
 <body>
@@ -96,8 +100,9 @@
         
      </div>
      <div class="about_me">
-         <h3>People Talk About me</h3>
-         <div class="carousel">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffee" fill-opacity="1" d="M0,128L20,160C40,192,80,256,120,250.7C160,245,200,171,240,170.7C280,171,320,245,360,261.3C400,277,440,235,480,218.7C520,203,560,213,600,213.3C640,213,680,203,720,181.3C760,160,800,128,840,112C880,96,920,96,960,122.7C1000,149,1040,203,1080,234.7C1120,267,1160,277,1200,282.7C1240,288,1280,288,1320,272C1360,256,1400,224,1420,208L1440,192L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg> <h3>People Talk About me</h3>
+       <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffee" fill-opacity="1" d="M0,128L20,160C40,192,80,256,120,250.7C160,245,200,171,240,170.7C280,171,320,245,360,261.3C400,277,440,235,480,218.7C520,203,560,213,600,213.3C640,213,680,203,720,181.3C760,160,800,128,840,112C880,96,920,96,960,122.7C1000,149,1040,203,1080,234.7C1120,267,1160,277,1200,282.7C1240,288,1280,288,1320,272C1360,256,1400,224,1420,208L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg><div class="carousel owl-carousel">
+            
              <div class="card">
                  <img src="assets/images/head2.png" alt="profil">
                  <p>Dignissimos quas alias cum repudiandae minima maxime, consequatur voluptate obcaecati non ea molestiae sed consequuntur.</p>
@@ -127,5 +132,29 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+   $('.carousel').owlCarousel({
+        margin:10,
+        loop:true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1,
+                nav: false
+            },
+             600:{
+                items:2,
+                nav: false
+            },
+             1000:{
+                items:3,
+                nav: false
+            },
+        }
+   })
+</script>
+
 </body>
 </html>

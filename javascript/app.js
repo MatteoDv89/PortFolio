@@ -54,3 +54,6 @@ timeline.to(".overlay", {
 //   y: "100%",
 //   ease: "elastic",
 // });
+
+//carousel
+

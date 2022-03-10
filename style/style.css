@@ -266,6 +266,7 @@ nav .phone_number ion-icon{
 }
 
 .bottom_banner{
+    
     position:absolute;
     bottom:-400px;
     right: 0;
@@ -283,6 +284,7 @@ nav .phone_number ion-icon{
     text-align: left;
     padding: 30px 0px;
     gap: 20px;
+    display:none;
 
 }
 
@@ -351,6 +353,109 @@ nav .phone_number ion-icon{
     padding: 5px 0 0 0;
     
 }
+
+.wave,.wave2{
+    display: none;
+    
+}
+
+.about_me{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    width: 90vw;
+    border: 1px solid var(--orange);
+    background-color: #ffffee;
+    border-radius: 30px;    
+    margin: 5vh auto;
+    
+    position:relative;
+    top:-28px;
+    border-top: 1px solid rgb(255,255,255,0.5);
+    box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    padding: 20px 0px 40px 0px;
+    
+
+}
+
+.about_me h3{
+    font-family: 'Caros Soft ExtraBold';
+    padding: 5px 0px;
+    color: #333;
+    font-size: 26px;
+    margin: 20px 0px;
+}
+
+.carousel{
+    
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 30px;
+   
+    
+}
+
+.carousel .card{
+
+
+    min-height: 150px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 10px;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    text-align: justify;
+    padding: 0px 15px;
+    box-shadow:  3px 3px 5px  rgb(0,0,0,0.2)
+}
+
+
+.carousel .card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 2;
+    top:-25px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    
+
+}
+
+.card p{
+    color: rgb(102, 101, 101);
+    font-family: 'Caros Soft';
+    text-align: center;
+}
+
+.card span{
+
+    font-family: 'Caros Soft ExtraBold';
+    color:#296F6D;
+    font-size: 15px;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    
+}
+
+
 
 @media (min-width:798px){
 
@@ -606,7 +711,7 @@ nav .phone_number ion-icon{
     font-size: 13px;
     color: #296F6D;
 }
-}
+
 
 .overlay{
     position:absolute;
@@ -637,17 +742,18 @@ nav .phone_number ion-icon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
     width: 90vw;
     border: 1px solid var(--orange);
-    background-color: var(--creme);   
+    background-color: #eeaa33 !important;   
     margin: 5vh auto;
     position:relative;
     top:-28px;
-    border-top: 1px solid rgb(255,255,255,0.5);
+    border-top: 1px solid rgb(255,255,255);
     box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.2);
     backdrop-filter: blur(2px);
-    padding: 20px 0px 40px 0px;
+    padding: 20px 20px 40px 20px;
+    
 
 }
 
@@ -656,21 +762,42 @@ nav .phone_number ion-icon{
     padding: 5px 0px;
     color: #333;
     font-size: 26px;
+    margin-top:50px;
+    
+}
+ .wave{
+     display: block;
+    position:absolute;
+    top:-1px;
+    z-index: -1;
+    
+    
+    left:1;
+    right: -0.5px
+    
+}
+.wave2{
+    display: block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    
 }
 
 .carousel{
-    width: 50%;    
-    height: 80%;
-    overflow: hidden;
-    display: flex;
+    
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 30px;
+   
     
 }
 
 .carousel .card{
 
 
-    min-width: 200px;
-    height: 80%;
+    min-height: 150px;
     border-radius: 12px;
     background-color: rgb(255, 255, 255);
     margin: 20px;
@@ -722,4 +849,4 @@ nav .phone_number ion-icon{
 
     
 }
-
+}

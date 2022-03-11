@@ -416,6 +416,13 @@ nav .phone_number ion-icon{
     margin: 20px 0px;
 }
 
+.feedback{
+    position:absolute;
+    width: 20%;
+    right:0px;
+    bottom:0px;
+    z-index: 1;
+}
 
 
 .carousel{
@@ -511,11 +518,17 @@ nav .phone_number ion-icon{
     bottom: 0px;
     z-index: 0;
 }
+.rating{
+    position:absolute;
+    width: 30%;
+    top:20%;
+    left: 10px;
+}
 
 
 
 .work .project{
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,7 +538,7 @@ nav .phone_number ion-icon{
       box-shadow: inset 2px 2px 3px 1px rgb(0,0,0,0.1),
     5px 5px 5px 1px rgb(0,0,0,0.2);
     border-radius: 10px;
-    background-color: rgb(255,255,255,0.8);
+    background-color: rgb(255,255,255,0.7);
     
     
 }
@@ -957,7 +970,12 @@ nav .phone_number ion-icon{
     
 }
 
-
+.rating{
+    position:absolute;
+    width: 12%;
+    top:15px;
+    left: 20px;
+}
 .work{
     display: flex;
     flex-wrap: wrap;

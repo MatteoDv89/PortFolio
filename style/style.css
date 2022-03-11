@@ -552,6 +552,12 @@ nav .phone_number ion-icon{
     left: 10px;
 }
 
+.header_wave{
+    position:absolute;
+    top:0;
+    left:0;    
+   
+}
 
 
 .work .project{

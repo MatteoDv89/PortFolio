@@ -1148,4 +1148,7 @@ nav .phone_number ion-icon{
     top: 100%;
     left: 0;
   }
+  .bottom_banner{
+      display: none;
+  }
 }

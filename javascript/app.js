@@ -77,3 +77,28 @@ gsap.from(".school .text4", {
   opacity: 0,
   duration: 2.5,
 });
+
+// AUDIO
+
+let song = new Audio("./assets/music/redbone.mp3");
+let button_mp3 = document.querySelector(".button_mp3");
+let isPlaying = false;
+
+button_mp3.addEventListener("click", () => {
+  button_mp3.classList.toggle("active");
+  playsong();
+});
+
+const playsong = () => {
+  isPlaying ? pause() : play();
+};
+
+const play = () => {
+  isPlaying = true;
+  song.play();
+};
+
+const pause = () => {
+  isPlaying = false;
+  song.pause();
+};

@@ -155,6 +155,61 @@ body{
     font-weight: 400;
 }
 
+.button_mp3{
+    position:absolute;
+    top: 10px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-family: 'Caros Soft ExtraBold';
+    color:#333;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button_mp3 h3 span{
+    font-size: 22px;
+    color: var(--blue-green)
+
+}
+.button_mp3 .border{
+    width: 30px;
+    height: 15px;
+    border: var(--orange);
+    border-radius: 7.5px ;
+    box-shadow: inset 0px 1px 2px 1px rgb(0,0,0,0.2),
+    0px 1px 2px 1px rgb(0,0,0,0.1);
+    display: flex;
+    
+}
+
+.button_mp3 .border span{
+    content:"";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #e17f93;
+    position: relative;
+     box-shadow: inset 0px 1px 2px 1px rgb(0,0,0,0.2),
+    0px 1px 2px 1px rgb(0,0,0,0.1);
+    left:3px;
+    top:1.2px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.button_mp3.active .border span{
+ left:14px;
+ transition: 0.2s  ease;
+ cursor: pointer;
+ background-color: #0abeb8;
+ box-shadow: inset 0px 1px 2px 1px rgb(0,0,0,0.2),
+    0px 1px 2px 1px rgb(0,0,0,0.1),
+    0px 0px 10px #0abeb8, 0px 0px 40px #0abeb8, 0px 0px 80px;
+}
+
+
+
 .container{
     display: flex;
     flex-direction: column;

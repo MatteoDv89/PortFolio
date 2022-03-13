@@ -252,6 +252,9 @@ nav .phone_number ion-icon{
     color: var(--dark-green);
     z-index: 1;
 }
+.left h1 span{
+    display: none;
+}
 
 .left .email p{
     color: #333;
@@ -1024,7 +1027,7 @@ nav .phone_number ion-icon{
 }
 .title_banner span{
     color: rgb(101,102,102);
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Caros Soft Medium';
     left:0;
     width: 80%;

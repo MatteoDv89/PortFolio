@@ -222,6 +222,8 @@ nav .phone_number ion-icon{
     align-items: center;
 }
 
+
+
 .content img{
     border-radius: 50%;
     position: absolute;
@@ -286,7 +288,9 @@ nav .phone_number ion-icon{
     gap: 10px;
     color: #333;
     font-weight: 600;
+    
 }
+
 
 
 .right .year span, .right .project span{
@@ -294,7 +298,11 @@ nav .phone_number ion-icon{
     font-family: 'Caros Soft Extrabold';
     font-weight: 600;
     
+  
+    
 }
+
+
 
 .right .media{
     display: flex;
@@ -655,13 +663,24 @@ nav .phone_number ion-icon{
     
     position:relative;
     
-    border-top: 1px solid rgb(255,255,255,0.5);
+    
     box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.2);
     backdrop-filter: blur(2px);
     padding: 55px 40px 75px 90px;
     gap: 30px;
+    overflow: hidden;
     
 
+}
+
+.school .pinceau{
+    position: absolute;
+    z-index: -1;
+    bottom:0;
+    right: 0;
+    transform: rotate(135deg) translateX(-300px) translateY(-100px);
+    
+    
 }
 .school h2{
     font-family: 'Caros Soft ExtraBold';
@@ -740,7 +759,7 @@ nav .phone_number ion-icon{
 }
 
 
-@media (min-width:698px){
+@media (min-width:798px){
 
 .container{
     display: flex;
@@ -933,17 +952,91 @@ nav .phone_number ion-icon{
     left: 0;
     margin: 0 auto;
     padding: 0px 20px;
-    
-    border-radius: 25px 25px 25px 25px;
+    max-height: 94px;
+    border-radius: 25px 25px 0px 25px;
     width: 70vw;
     background-color: #fff;
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.2);
     border-bottom: 1px solid #ccc;
+    
 
+}
+
+.bottom_banner .title_banner{
+
+    display: block;
+    width: 100%;
+    z-index: 0;
+    padding: 50px 10px;
+    
+    font-family: 'Caros Soft ExtraBold';
+   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(64, 168, 168, 0.226);
+}
+.title_banner h2{
+    padding: 50px;
+    display: block;
+    color: #e17f9254;
+     font-size: 60px;
+     max-width: 300px;
+     text-align: center;
+     letter-spacing: -2.5px;
+    
+    position: absolute;
+    right: -50px;
+    line-height: 1;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+
+.title_banner p{
+    position: absolute;
+    color:#333;
+    font-size: 62px;
+    right:0;
+    
+    /* color:#337da8; */
+    color:var(--blue-green);
+    font-family: 'BetterGrade';
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 3px;
+    
+}
+.title_banner span{
+    color: rgb(101,102,102);
+    font-size: 16px;
+    font-family: 'Caros Soft Medium';
+    left:0;
+    width: 80%;
+    padding: 50px;
+    position: absolute;
+}
+
+.title_banner span::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    position: absolute;
+    left:0;
+      box-shadow: inset 0px 1px 2px 1px rgb(0,0,0,0.3),
+    0px 0px 2px 1px rgb(0,0,0,0.2);
+}
+
+.title_banner .txt_banner{
+    position: absolute;
 }
 
 .bottom_banner .link .text-box{

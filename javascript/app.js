@@ -26,15 +26,14 @@ gsap.from(".school .text1", {
   scrollTrigger: {
     trigger: ".school .text1",
     toggleActions: "play none none none",
-    start: "80px bottom",
-    end: "180px bottom",
-    markers: true,
+    start: "180px bottom",
+    end: "250px bottom",
   },
 
   y: "-100%",
   ease: "power4",
   opacity: 0,
-  duration: 2,
+  duration: 2.5,
 });
 
 gsap.from(".school .text2", {
@@ -43,13 +42,12 @@ gsap.from(".school .text2", {
     toggleActions: "play none none none",
     start: "80px bottom",
     end: "180px bottom",
-    markers: true,
   },
 
   x: "100%",
   ease: "power4",
   opacity: 0,
-  duration: 2,
+  duration: 2.5,
 });
 
 gsap.from(".school .text3", {
@@ -58,13 +56,12 @@ gsap.from(".school .text3", {
     toggleActions: "play none none none",
     start: "80px bottom",
     end: "180px bottom",
-    markers: true,
   },
 
   x: "-100%",
   ease: "power4",
   opacity: 0,
-  duration: 2,
+  duration: 2.5,
 });
 
 gsap.from(".school .text4", {
@@ -73,11 +70,10 @@ gsap.from(".school .text4", {
     toggleActions: "play none none none",
     start: "80px bottom",
     end: "180px bottom",
-    markers: true,
   },
 
   y: "100%",
   ease: "power4",
   opacity: 0,
-  duration: 2,
+  duration: 2.5,
 });

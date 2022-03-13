@@ -20,40 +20,64 @@ timeline.to(".overlay", {
   duration: 1,
 });
 
-// timeline.from(".logo", {
-//   y: "-100%",
-//   ease: "power4",
-//   opacity: 0,
-// });
-// timeline.from("nav ul li", {
-//   delay: -0.5,
-//   duration: 0.7,
-//   opacity: 0,
+gsap.registerPlugin(ScrollTrigger);
 
-//   y: "-100%",
-//   ease: "bounce",
-//   stagger: 0.3,
-// });
-// timeline.from(".phone_number", {
-//   opacity: 0,
-//   y: "-100%",
-//   ease: "power4",
-// });
+gsap.from(".school .text1", {
+  scrollTrigger: {
+    trigger: ".school .text1",
+    toggleActions: "play none none none",
+    start: "80px bottom",
+    end: "180px bottom",
+    markers: true,
+  },
 
-// timeline.from(".content", {
-//   opacity: 0,
-//   scale: 0.5,
+  y: "-100%",
+  ease: "power4",
+  opacity: 0,
+  duration: 2,
+});
 
-//   ease: "power3",
-// });
-// timeline.from(".content .bottom_banner", {
-//   opacity: 0,
-//   delay: 0.2,
-//   duration: 2,
+gsap.from(".school .text2", {
+  scrollTrigger: {
+    trigger: ".school .text2",
+    toggleActions: "play none none none",
+    start: "80px bottom",
+    end: "180px bottom",
+    markers: true,
+  },
 
-//   y: "100%",
-//   ease: "elastic",
-// });
+  x: "100%",
+  ease: "power4",
+  opacity: 0,
+  duration: 2,
+});
 
-//carousel
+gsap.from(".school .text3", {
+  scrollTrigger: {
+    trigger: ".school .text3",
+    toggleActions: "play none none none",
+    start: "80px bottom",
+    end: "180px bottom",
+    markers: true,
+  },
 
+  x: "-100%",
+  ease: "power4",
+  opacity: 0,
+  duration: 2,
+});
+
+gsap.from(".school .text4", {
+  scrollTrigger: {
+    trigger: ".school .text4",
+    toggleActions: "play none none none",
+    start: "80px bottom",
+    end: "180px bottom",
+    markers: true,
+  },
+
+  y: "100%",
+  ease: "power4",
+  opacity: 0,
+  duration: 2,
+});

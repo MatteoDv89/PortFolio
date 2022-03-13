@@ -635,6 +635,104 @@ nav .phone_number ion-icon{
     left:-10px;
 }
 
+
+
+.school{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 300px;
+    width: 90vw;
+    border: 1px solid var(--orange);
+    background-color: #ffffff;
+    border-radius: 30px;    
+    margin: 50px auto auto;
+    min-height: 350px;
+    top:-28px;
+    
+    
+    position:relative;
+    
+    border-top: 1px solid rgb(255,255,255,0.5);
+    box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    padding: 55px 40px 75px 90px;
+    gap: 30px;
+    
+
+}
+.school h2{
+    font-family: 'Caros Soft ExtraBold';
+    font-size: 26px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #e17f93;
+    font-size: 26px;
+    left:0;
+    top: 30px;
+}
+.school h2 span{
+    font-family: 'Caros Soft Medium';
+    font-size: 26px;
+}
+
+.school p{
+    
+    display: block;
+    font-family: 'Caros Soft ExtraBold';
+    font-size: 20px;
+    color: var(--blue-green);
+    position: relative;
+    top: 50px;
+}
+
+.school span{
+    
+    font-family: 'Caros Soft Medium';
+    color: rgb(102, 101, 101);
+    font-size: 18px;
+}
+
+.school svg{
+    position: absolute;
+    left: 50px;
+    top:20px;
+}
+
+.school .ball{
+    background-color: white;
+    
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left:-49px;
+
+}
+
+.school .ball01{
+    background-color: var(--yellow);
+    /* box-shadow: 0px 0px 5px var(--yellow),
+     0px 0px 40px var(--yellow),
+      0px 0px 80px var(--yellow); */
+}
+.school .ball02{
+    background-color: #e17f93;
+     
+}
+.school .ball03{
+    background-color: var(--orange);
+}
+.school .ball04{
+    background-color: var(--dark-green);
+}
+
 @media (max-height:610px){
     .left h1{
         font-size: 24px;
@@ -1138,7 +1236,7 @@ nav .phone_number ion-icon{
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -1147,7 +1245,7 @@ nav .phone_number ion-icon{
     position: absolute;
     top: 100%;
     left: 0;
-  }
+  } */
   .bottom_banner{
       display: none;
   }

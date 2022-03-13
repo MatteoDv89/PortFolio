@@ -1,24 +1,173 @@
+
+    @font-face {
+    font-family: 'Caros Soft Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Regular'), url(../assets/fonts/CarosSoft.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Thin'), url(../assets/fonts/CarosSoftThin.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft ExtraLight'), url(../assets/fonts/CarosSoftExtraLight.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Light'), url(../assets/fonts/CarosSoftLight.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Medium'), url(../assets/fonts/CarosSoftMedium.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Bold'), url(../assets/fonts/CarosSoftBold.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft ExtraBold'), url(../assets/fonts/CarosSoftExtraBold.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Heavy'), url(../assets/fonts/CarosSoftHeavy.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Caros Soft Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caros Soft Black'), url(../assets/fonts/CarosSoftBlack.woff) format('woff');
+    }
+
+    @font-face {
+    font-family: 'BetterGrade';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BetterGrade'), url(../assets/fonts/BetterGrade-519DV.ttf) format('woff');
+    }
+
+    :root{
+
+--orange: #eeaa33;
+--light-orange:#eebb55;
+--creme:#ffffee;
+--light-grey:#F8F7F1;
+--grey:#bbbbaa;
+--dark-green:#556655;
+--yellow:#ffcc11;
+--blue-green: #296F6D;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f7f7f7;
+    
 }
 
-section{
-    width: 100vw;
-    height: 100vh;
+
+.school{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 300px;
+    width: 90vw;
+    border: 1px solid var(--orange);
+    background-color: #ffffff;
+    border-radius: 30px;    
+    margin: 50px auto auto;
+    min-height: 350px;
+    
+    
     position:relative;
-    top:0;
-    left:0;
-    background-color: #fff;
+    
+    border-top: 1px solid rgb(255,255,255,0.5);
+    box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    padding: 55px 40px 55px 90px;
+    gap: 30px;
+    
+
 }
 
-section svg{
-position: absolute;
-bottom:0;
-left:40%;
- background-color: #fff;
+.school p{
+    
+    display: block;
+    font-family: 'Caros Soft ExtraBold';
+    font-size: 20px;
+    color: var(--blue-green);
+    position: relative;
+}
 
-transform: translateX(-0%) rotate(-90deg);
+.school span{
+    
+    font-family: 'Caros Soft Medium';
+    color: rgb(102, 101, 101);
+    font-size: 18px;
+}
 
+.school svg{
+    position: absolute;
+    left: 50px;
+    top:72px;
+}
+
+.school .ball{
+    background-color: white;
+    
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left:-49px;
+
+}
+
+.school .ball01{
+    background-color: var(--yellow);
+}
+.school .ball02{
+    background-color: #e17f93;
+}
+.school .ball03{
+    background-color: var(--orange);
+}
+.school .ball04{
+    background-color: var(--dark-green);
 }

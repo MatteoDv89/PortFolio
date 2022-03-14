@@ -102,3 +102,8 @@ const pause = () => {
   isPlaying = false;
   song.pause();
 };
+
+//swiper
+
+
+

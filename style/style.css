@@ -129,6 +129,15 @@ body{
    
 }
 
+.copyright{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Caros Soft thin';
+    color:#fff;
+    font-size: 14px;
+}
 
 
 .overlay{

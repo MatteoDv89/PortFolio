@@ -20,64 +20,6 @@ timeline.to(".overlay", {
   duration: 1,
 });
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".school .text1", {
-  scrollTrigger: {
-    trigger: ".school .text1",
-    toggleActions: "play none none none",
-    start: "180px bottom",
-    end: "250px bottom",
-  },
-
-  y: "-100%",
-  ease: "power4",
-  opacity: 0,
-  duration: 2.5,
-});
-
-gsap.from(".school .text2", {
-  scrollTrigger: {
-    trigger: ".school .text2",
-    toggleActions: "play none none none",
-    start: "80px bottom",
-    end: "180px bottom",
-  },
-
-  x: "100%",
-  ease: "power4",
-  opacity: 0,
-  duration: 2.5,
-});
-
-gsap.from(".school .text3", {
-  scrollTrigger: {
-    trigger: ".school .text3",
-    toggleActions: "play none none none",
-    start: "80px bottom",
-    end: "180px bottom",
-  },
-
-  x: "-100%",
-  ease: "power4",
-  opacity: 0,
-  duration: 2.5,
-});
-
-gsap.from(".school .text4", {
-  scrollTrigger: {
-    trigger: ".school .text4",
-    toggleActions: "play none none none",
-    start: "80px bottom",
-    end: "180px bottom",
-  },
-
-  y: "100%",
-  ease: "power4",
-  opacity: 0,
-  duration: 2.5,
-});
-
 // AUDIO
 
 let song = new Audio("./assets/music/redbone.mp3");
@@ -104,6 +46,3 @@ const pause = () => {
 };
 
 //swiper
-
-
-

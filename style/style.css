@@ -138,6 +138,7 @@ body{
     font-family: 'Caros Soft thin';
     color:#fff;
     font-size: 14px;
+    z-index:2;
 }
 
 
@@ -1314,13 +1315,13 @@ nav .phone_number ion-icon{
     color: #333;
     font-size: 26px;
     margin-top:50px;
-    
+    z-index:1;
 }
  .wave{
      display: block;
     position:absolute;
     top:-1px;
-    z-index: -1;
+    z-index: 0;
     
     
     left:1;
@@ -1332,7 +1333,7 @@ nav .phone_number ion-icon{
     position:absolute;
     bottom:0;
     left:0;
-    z-index: -1;
+    z-index: 0;
     
 }
 

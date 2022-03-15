@@ -82,6 +82,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -243,7 +244,10 @@ nav{
     padding: 10px 50px;
     color: var(--blue-green)
 }
-
+nav a{
+    text-decoration: none;
+    color: var(--blue-green)
+}
 nav .logo h2{
     font-family: 'BetterGrade';
     font-weight: 500;
@@ -369,7 +373,10 @@ nav .phone_number ion-icon{
     
 }
 
-
+.right .media a{
+    text-decoration: none;
+    color: var(--blue-green);
+}
 
 .right .media{
     display: flex;
@@ -748,7 +755,8 @@ nav .phone_number ion-icon{
 
 }
 .school img{
-    height: 80%;
+    
+    height: 70%;
     position: absolute;
     left:0;
     right: 0;
@@ -798,62 +806,8 @@ nav .phone_number ion-icon{
 
 }
 
-
-
-
-.skills{
-    display: flex;
-    flex-direction: row;
-    position:relative;
-    padding:6px 0px;
-    
-    gap:25px;
-    
-    justify-content: center;
-    align-content: flex-end;
-}
-
-.back_skill h2, .front_skill h2{
-    display: block;
-    width: 100%;
-    color:#1a8a86 !important;
-    
-    padding:0px 2px;
-    position:relative;
-    top:18px !important;
-    
-}
-.back_skill{
-    position:absolute;
-    color:#333;
-    font-family: 'Caros Soft Medium';
-    font-size: 16px;
-    bottom:0;
-    right:20px;
-    width: 30%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    height: 150px;
-}
-.front_skill{
-    position:absolute;
-    color:#333;
-    font-family: 'Caros Soft Medium';
-    font-size: 16px;
-    bottom:0;
-    left:40px;
-    width: 30%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    height: 150px;
+.front_skill, .back_skill{
+    display:none;
 }
 
 
@@ -1003,6 +957,9 @@ nav ul li:hover{
    color: var(--orange);
     border-radius: 10px;
     transition: ease ;
+}
+nav ul li a:hover{
+      color: var(--orange);
 }
 
 nav .phone_number{
@@ -1168,7 +1125,9 @@ nav .phone_number ion-icon{
     font-weight: 600;
     
 }
-
+.right .media a{
+    text-decoration: none;
+}
 .right .media{
     display: flex;
     flex-direction: column;
@@ -1179,12 +1138,13 @@ nav .phone_number ion-icon{
     padding-right: 20px;
     color:var(--blue-green)
 }
-.right .media ion-icon{
+.right .media a ion-icon{
     padding: 10px;
     transition: ease-in-out 0.5s;
     cursor: pointer;
+    color: var(--blue-green)
 }
-.right .media ion-icon:hover{
+.right .media a ion-icon:hover{
     color:var(--orange);
     transform: scale(1.15) translateX(-10px);
     transition: ease-in-out 0.5s;
@@ -1309,25 +1269,13 @@ nav .phone_number ion-icon{
     0px 1px 2px 2px rgb(0,0,0,0.2);
 }
 
-.bottom_banner .link:nth-child(1) span{
-    background-color: var(--blue-green);
-}
-.bottom_banner .link:nth-child(2) span{
-    background-color: var(--yellow);
-}
-.bottom_banner .link:nth-child(3) span{
-    background-color: var(--orange);
-}
 
-.bottom_banner .link{
-    padding: 20px;
-    margin:auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    font-family: 'Caros Soft Extrabold';
-    
+.bottom_banner .title_banner span{
+    font-size: 12px;
+    text-align: right;
+    padding: 5px 50px 5px 20px;
+    font-family: 'Caros Soft Medium';
+
 }
 .bottom_banner .link p{
     font-size: 13px;
@@ -1572,20 +1520,68 @@ nav .phone_number ion-icon{
     
 }
 
+.school img{
+
+    height: 80%
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    padding:6px 0px;
+    
+    gap:25px;
+    
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.back_skill h2, .front_skill h2{
+    display: block;
+    width: 100%;
+    color:#1a8a86 !important;
+    
+    padding:0px 2px;
+    position:relative;
+    top:18px !important;
+    
+}
+.back_skill{
+    position:absolute;
+    color:#333;
+    font-family: 'Caros Soft Medium';
+    font-size: 16px;
+    bottom:0;
+    right:20px;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+}
+.front_skill{
+    position:absolute;
+    color:#333;
+    font-family: 'Caros Soft Medium';
+    font-size: 16px;
+    bottom:0;
+    left:40px;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+}
+
+
 
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  } */
-  .bottom_banner{
-      display: none;
-  }
-}
+

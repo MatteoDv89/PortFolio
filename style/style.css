@@ -287,6 +287,7 @@ nav .phone_number ion-icon{
     height: calc(100% - 50px);
     display: flex;
     justify-content: center;
+    position:relative;
     align-items: center;
 }
 
@@ -299,6 +300,8 @@ nav .phone_number ion-icon{
     top:62%;
     transform: translate(-50%,-50%) scale(0.8);
     width: 100%;
+    z-index: 0;
+    
 
 }
 .left{
@@ -1042,13 +1045,14 @@ nav .phone_number ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative;
 }
 
 .content img{
     border-radius: 50%;
     position: absolute;
     left:50%;
-    top:55%;
+    top:50%;
     transform: translate(-50%,-50%) scale(0.36);
     
 
@@ -1153,7 +1157,7 @@ nav .phone_number ion-icon{
 
 .bottom_banner{
     position:absolute;
-    bottom:4px;
+    bottom:0px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -1293,7 +1297,7 @@ nav .phone_number ion-icon{
     border: 1px solid var(--orange);
     background-color: #eeaa33 !important;   
     margin: 50px auto auto;
-    
+    position:relative;
     
       
     border-top: 1px solid rgb(255,255,255);
